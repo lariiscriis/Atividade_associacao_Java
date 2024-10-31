@@ -30,5 +30,6 @@ Este projeto implementa um sistema de cadastro básico de clientes e funcionári
 
 ## Desenvolvedores
 - Larissa Cristina Bento Santana (FATEC Praia Grande)
-- Arthur Lopes Santos
+- Arthur Lopes Santos (FATEC Praia Grande)
+
 
