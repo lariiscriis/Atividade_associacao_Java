@@ -1,5 +1,7 @@
 package br.edu.fatecpg.associacao.model;
 
+import javax.swing.JOptionPane;
+
 public class Empresa {
     private Cliente[] clientes = new Cliente[5];
     private Funcionario[] funcionarios = new Funcionario[10];
@@ -11,7 +13,7 @@ public class Empresa {
             clientes[contadorClientes] = new Cliente(nome, email);
             contadorClientes++;
         } else {
-            System.out.println("Não é possível cadastrar mais clientes.");
+            JOptionPane.showMessageDialog(null, "Não é possível cadastrar mais clientes.");
         }
     }
 
@@ -20,7 +22,7 @@ public class Empresa {
             funcionarios[contadorFuncionarios] = new Funcionario(nome, cargo, salario);
             contadorFuncionarios++;
         } else {
-            System.out.println("Não é possível cadastrar mais funcionários.");
+            JOptionPane.showMessageDialog(null, "Não é possível cadastrar mais funcionários.");
         }
     }
 
