@@ -1,18 +1,35 @@
-## Getting Started
+# Sistema de Cadastro com Interface Gráfica (Swing)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto implementa um sistema de cadastro básico de clientes e funcionários com uma interface gráfica usando Java Swing. A aplicação foca em conceitos de **associação**, **composição** e **dependência** entre classes.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+### Parte 1: Associação
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Classe Cliente**: Armazena os atributos `nome` e `email`.
+- **Classe Empresa**: Armazena uma lista de até 5 clientes.
+  - `adicionarCliente(String nome, String email)`: Adiciona um novo cliente à lista.
+  - `exibirClientes()`: Exibe o nome e o email de cada cliente cadastrado.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Parte 2: Composição
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- A **Classe Empresa** armazena uma lista de até 10 funcionários.
+  - `adicionarFuncionario(String nome, String cargo, double salario)`: Adiciona um novo funcionário com nome, cargo e salário.
+  - `exibirFuncionarios()`: Exibe o nome e cargo de cada funcionário.
 
-## Dependency Management
+### Parte 3: Dependência
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Classe Calculadora**: Realiza operações de soma e divisão.
+- Na **Classe Empresa**:
+  - `CalcularSomaSalario()`: Utiliza a `Calculadora` para calcular a soma salarial dos funcionários.
+  - `CalcularMediaSalario()`:  Utiliza a `Calculadora` para calcular a média salarial dos funcionários.
+
+## Tecnologias
+
+- Java (Swing para interface gráfica)
+
+## Desenvolvedores
+- Larissa Cristina Bento Santana (FATEC Praia Grande)
+- Arthur Lopes Santos (FATEC Praia Grande)
+
+
